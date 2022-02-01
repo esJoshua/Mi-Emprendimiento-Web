@@ -1,0 +1,28 @@
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid gray;
+  width: 100%;
+  margin-left: 10px;
+  &__course {
+    border: 2px solid lightgray;
+    margin: 1rem;
+    padding: 8px;
+    &-img {
+      width: 100%;
+    }
+    & p {
+      text-align: justify;
+    }
+    &-icons {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+      i {
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+    }
+  }
+}
