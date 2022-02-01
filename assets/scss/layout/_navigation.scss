@@ -1,5 +1,10 @@
 .navigation {
-    grid-area: nav;
-    background-color: black;
-    padding: 0 1rem 0 1rem;
+  grid-area: nav;
+  padding: 0 1rem 0 1rem;
+  &__text {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: $fs-large;
+  }
 }
