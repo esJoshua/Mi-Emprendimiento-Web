@@ -1,5 +1,6 @@
 //Abstracts
 @import "abstracts/variables";
+@import "abstracts/mixin";
 
 //Base
 @import "base/reset";
@@ -7,6 +8,7 @@
 
 //Components
 @import "components/buttons";
+@import "components/svg";
 
 //Layout
 @import "layout/navigation";

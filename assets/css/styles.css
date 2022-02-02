@@ -8,6 +8,33 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+.footer__right--button {
+  background-color: #ffaf6d;
+  width: 64px;
+  height: 30x;
+  border-radius: 4px;
+}
+.footer__right--button:hover {
+  background-color: white;
+}
+
+.spin {
+  animation-name: girar;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 80% 80%;
+}
+
+@keyframes girar {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
 .navigation {
   grid-area: nav;
   padding: 0 1rem 0 1rem;
@@ -61,6 +88,9 @@ body {
 }
 .aside__about-course {
   text-align: justify;
+}
+.aside__about-course a {
+  text-decoration: none;
 }
 .aside__about-animation {
   display: block;
@@ -125,20 +155,11 @@ body {
   border-color: lightgray;
   border-width: 2px;
   border-style: inset;
-  width: 160px;
+  width: 10rem;
   height: 30px;
 }
 .footer__right--input:focus {
   background-color: #ffaf6d;
-}
-.footer__right--button {
-  background-color: #ffaf6d;
-  width: 64px;
-  height: 30x;
-  border-radius: 4px;
-}
-.footer__right--button:hover {
-  background-color: white;
 }
 
 .grid {

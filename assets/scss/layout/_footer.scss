@@ -9,8 +9,6 @@
   padding: 2rem 0 1rem 0;
   margin-top: 8px;
 
-  &__left {
-  }
   &__right {
     & a {
       background-color: black;
@@ -23,20 +21,11 @@
       border-color: lightgray;
       border-width: 2px;
       border-style: inset;
-      width: 160px;
+      width: 10rem;
       height: 30px;
-      
+
       &:focus {
         background-color: $color-tangerine;
-      }
-    }
-    &--button {
-      background-color: $color-tangerine;
-      width: 64px;
-      height:30x;
-      border-radius: 4px;
-      &:hover {
-        background-color: white;
       }
     }
   }
