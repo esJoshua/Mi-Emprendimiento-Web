@@ -1,0 +1,22 @@
+{
+  "name": "mi-emprendimiento-web-2020",
+  "version": "1.0.0",
+  "description": "https://esjoshua.github.io/Mi-Emprendimiento-Web/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass assets/scss/main.scss:assets/css/styles.css",
+    "sass:watch": "sass --watch assets/scss/main.scss:assets/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esJoshua/Mi-Emprendimiento-Web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esJoshua/Mi-Emprendimiento-Web/issues"
+  },
+  "homepage": "https://github.com/esJoshua/Mi-Emprendimiento-Web#readme"
+}
