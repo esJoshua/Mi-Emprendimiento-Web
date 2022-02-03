@@ -4,16 +4,18 @@
   flex-direction: column;
   border: 2px solid gray;
   margin-right: 1rem;
+  font-family: $ff-poppins;
   &__about {
     margin: 1rem;
     &-us {
       text-align: center;
       & h1 {
-        font-size: $fs-x-large;
+        font-size: $fs-large;
+        padding-top: 1rem;
       }
       & p {
-        text-align: justify;
         font-size: $fs-medium;
+        text-align: justify;
       }
       &--img {
         width: 25%;
@@ -33,6 +35,14 @@
     }
     &-course {
       text-align: justify;
+      & h1 {
+        color: white;
+        background-color: $color-sable;
+        text-align: center;
+        font-size: $fs-large;
+        font-weight: $fw-bold;
+        padding: 5px;
+      }
       & a {
         text-decoration: none;
       }
@@ -41,10 +51,10 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 30%;
+      width: 40%;
     }
   }
   @include tablet {
-    margin: 0;
+    margin: 0 1rem 0 1rem;
   }
 }

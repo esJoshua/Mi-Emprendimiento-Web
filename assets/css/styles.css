@@ -10,9 +10,10 @@ body {
 
 .footer__right--button {
   background-color: #ffaf6d;
-  width: 64px;
+  width: 60px;
   height: 30x;
   border-radius: 4px;
+  border-color: white;
 }
 .footer__right--button:hover {
   background-color: white;
@@ -51,7 +52,7 @@ body {
 }
 /* Spin Animation setup*/
 .spin {
-  animation-name: girar;
+  animation-name: rotate;
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -59,7 +60,7 @@ body {
   transform-origin: center;
 }
 
-@keyframes girar {
+@keyframes rotate {
   100% {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
@@ -74,9 +75,9 @@ body {
 }
 .navigation__text {
   color: white;
-  text-decoration: none;
   margin: 10px;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .hero {
@@ -90,6 +91,7 @@ body {
   flex-direction: column;
   border: 2px solid gray;
   margin-right: 1rem;
+  font-family: "Poppins", sans-serif;
 }
 .aside__about {
   margin: 1rem;
@@ -98,11 +100,12 @@ body {
   text-align: center;
 }
 .aside__about-us h1 {
-  font-size: 30px;
+  font-size: 20px;
+  padding-top: 1rem;
 }
 .aside__about-us p {
-  text-align: justify;
   font-size: 16px;
+  text-align: justify;
 }
 .aside__about-us--img {
   width: 25%;
@@ -122,6 +125,14 @@ body {
 .aside__about-course {
   text-align: justify;
 }
+.aside__about-course h1 {
+  color: white;
+  background-color: #464444;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px;
+}
 .aside__about-course a {
   text-decoration: none;
 }
@@ -129,11 +140,11 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 40%;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 750px) {
   .aside {
-    margin: 0;
+    margin: 0 1rem 0 1rem;
   }
 }
 
@@ -170,9 +181,9 @@ body {
   margin-left: 8px;
   margin-right: 8px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 750px) {
   .main {
-    margin: 0;
+    margin: 0 1rem 0 1rem;
   }
 }
 
@@ -183,13 +194,14 @@ body {
   justify-content: space-evenly;
   align-items: baseline;
   background-color: black;
-  color: white;
+  color: #fff;
   padding: 2rem 0 1rem 0;
   margin-top: 8px;
+  font-family: "Poppins", sans-serif;
 }
 .footer__right a {
   background-color: black;
-  color: white;
+  color: #fff;
   text-decoration: none;
   margin: 10px;
 }
@@ -204,17 +216,30 @@ body {
 .footer__right--input:focus {
   background-color: #ffaf6d;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 750px) {
   .footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+  }
+  .footer__left p {
+    margin: 0;
   }
   .footer__right {
     align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
+  }
+  .footer__right a {
+    margin: 0;
+    padding-top: 1rem;
+  }
+  .footer__right input, .footer__right button {
+    margin-top: 10px;
   }
 }
 
@@ -225,7 +250,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: " nav nav " "hero hero" "main aside" "footer footer";
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr;
     display: flex;

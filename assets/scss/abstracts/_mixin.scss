@@ -1,11 +1,5 @@
-// @mixin  medium-view {
-//     @media screen and ($min-medium) {
-//       grid-template-columns: 1fr;
-//     }
-//   }
-  
 @mixin tablet {
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 750px) {
     @content;
   }
 }

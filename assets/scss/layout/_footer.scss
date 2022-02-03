@@ -5,14 +5,15 @@
   justify-content: space-evenly;
   align-items: baseline;
   background-color: black;
-  color: white;
+  color: $color-white;
   padding: 2rem 0 1rem 0;
   margin-top: 8px;
+  font-family: $ff-poppins;
 
   &__right {
     & a {
       background-color: black;
-      color: white;
+      color: $color-white;
       text-decoration: none;
       margin: 10px;
     }
@@ -32,12 +33,25 @@
   @include tablet {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    &__right{
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+    &__left p {
+      margin: 0;
+    }
+    &__right {
       align-items: center;
-    display: flex;
-    flex-direction: column;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      & a {
+        margin: 0;
+        padding-top: 1rem;
+      }
+      & input, button {
+        margin-top: 10px;
+      }
     }
   }
 }
