@@ -1,6 +1,39 @@
+/* Swept Animation setup*/
+.swept {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: leftright 2000ms linear infinite;
+  -webkit-animation: leftright 2000ms linear infinite;
+}
+@keyframes leftright {
+  0% {
+    transform: translateX();
+    -webkit-transform: translateX();
+    -moz-transform: translateX();
+    -ms-transform: translateX();
+    -o-transform: translateX();
+  }
+  50% {
+    transform: translateX(150px);
+    -webkit-transform: translateX(150px);
+    -moz-transform: translateX(150px);
+    -ms-transform: translateX(150px);
+    -o-transform: translateX(150px);
+  }
+  100% {
+    transform: translateX();
+    -webkit-transform: translateX(px);
+    -moz-transform: translateX(px);
+    -ms-transform: translateX(px);
+    -o-transform: translateX(px);
+  }
+}
+
+/* Spin Animation setup*/
+
 .spin {
   animation-name: girar;
-  animation-duration: 10s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-box: fill-box;
