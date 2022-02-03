@@ -9,7 +9,7 @@
     margin: 1rem;
     &-us {
       text-align: center;
-      & h1 {
+      & h2 {
         font-size: $fs-large;
         padding-top: 1rem;
       }
@@ -54,7 +54,7 @@
       width: 40%;
     }
   }
-  @include tablet {
+  @include mobile {
     margin: 0 1rem 0 1rem;
   }
 }

@@ -99,7 +99,7 @@ body {
 .aside__about-us {
   text-align: center;
 }
-.aside__about-us h1 {
+.aside__about-us h2 {
   font-size: 20px;
   padding-top: 1rem;
 }
@@ -238,7 +238,8 @@ body {
     margin: 0;
     padding-top: 1rem;
   }
-  .footer__right input, .footer__right button {
+  .footer__right input,
+.footer__right button {
     margin-top: 10px;
   }
 }
@@ -255,8 +256,8 @@ body {
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     justify-content: center;
+    gap: 10px;
   }
 }
 

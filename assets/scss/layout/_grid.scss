@@ -1,3 +1,4 @@
+//Layout for desktop view
 .grid {
   display: grid;
   width: 100%;
@@ -10,11 +11,12 @@
     "main aside"
     "footer footer";
 
-  @include tablet {
+  //Layout for mobile view
+  @include mobile {
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;
-    gap: 10px;    
     justify-content: center;
+    gap: 10px;
   }
 }
