@@ -23,7 +23,8 @@ body {
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  transform-origin: 80% 80%;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 @keyframes girar {
