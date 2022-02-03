@@ -132,7 +132,7 @@ body {
 .aside__about-course {
   text-align: justify;
 }
-.aside__about-course h1 {
+.aside__about-course h2 {
   color: white;
   background-color: #464444;
   text-align: center;
@@ -152,6 +152,9 @@ body {
 @media only screen and (max-width: 750px) {
   .aside {
     margin: 0 1rem 0 1rem;
+  }
+  .aside__about-animation {
+    width: 60%;
   }
 }
 
